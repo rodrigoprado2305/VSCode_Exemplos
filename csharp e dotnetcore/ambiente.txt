@@ -1,0 +1,13 @@
+https://www.youtube.com/watch?v=a6WPeTG1QEk
+
+1 - baixar  o instalador da linguagem dotnetcore para windows, o sdk
+https://dotnet.microsoft.com/download
+
+
+2 - configurar a variável de ambiente no path, para usuário e para o sistema.
+exemplo:
+C:\Users\rodrigoprado\AppData\Local\Programs\Python\Python39
+
+3 - abrir o visual code ir em extensões
+3.1 -  .run Code Runner, code runner, instalar.
+3.2. -  Python extension for Visual Studio Code

@@ -1,0 +1,14 @@
+https://www.youtube.com/watch?v=UEvXPo4cM6c&t=26s
+
+1 - baixar  o instalador da linguagem go para windows
+https://golang.org/dl/
+
+2 - no cmd digitar, demonstrando que esta instalado certo: go version
+3 - mostrar as config: go env
+
+3 - abrir o visual code ir em extensões
+3.1 -  .run Code Runner, code runner, instalar.
+3.2. -  Go for Visual Studio Code, instalar
+
+4 ctrl + alt + n pra dar o run ou pelo "play"
+
