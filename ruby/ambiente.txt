@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=XSxrwc6ds28
+
+1 - baixar  o instalador da linguagem ruby para windows
+https://rubyinstaller.org/downloads/
+
+2 - configurar a variável de ambiente no path, para usuário e para o sistema.
+exemplo:
+
+3. testar ele instalado pelo dos com
+versao
+ruby -v
+
+gem com
+gems list
+
+entrar no ruby com
+irb
+
+puts "Hello world"
+
+3 - abrir o visual code ir em extensões
+3.1 -  ruby
+3.2 - ruby on rails
+3.3 vscode ruby
+
+no visual code
+
+digitar o oi mundo exemplo... clique com o botão direito e "run code"
