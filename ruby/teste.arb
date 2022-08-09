@@ -1,0 +1,5 @@
+val1 = true and false
+val2 = true && false
+
+puts val1
+puts val2
