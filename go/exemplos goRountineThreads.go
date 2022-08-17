@@ -5,18 +5,18 @@ import (
 	"time"
 )
 
-func contador(tipo string) {
-	for i := 0; i < 5; i++ {
+// func nome_e_idade(nome string, idade int) (string, int, error) {
+func contador_teste(tipo string, tempo int) {
+	for i := 0; i < tempo; i++ {
 		fmt.Println(tipo, i)
-		time.Sleep(time.Second)
 	}
+	time.Sleep(time.Second * time.Duration(tempo))
 }
 
 func main() {
-	//	contador("a")
-	//  contador("b")
-
-	go contador("c")
-	go contador("d")
-	time.Sleep(time.Second * 10)
+	fmt.Println("a")
+	go contador_teste("b", 3)
+	fmt.Println("c")
+	contador_teste("d", 4)
+	time.Sleep(time.Second)
 }

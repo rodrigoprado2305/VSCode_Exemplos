@@ -43,11 +43,24 @@ func main() {
 		Name: "Focus",
 		Year: 2013,
 	}
-
 	car1.Drive()
+
+	fmt.Println("antes")
+	var car2 Car
+	car2.Name = "Forddddddddddddddddddddd"
+	car2.Year = 2011
+	result2, _ := json.Marshal(car2)
+	fmt.Println(string(result2))
+	fmt.Println("depois")
 
 	result, _ := json.Marshal(car1)
 	fmt.Println(string(result))
+
+	var car Car
+	j := []byte(`{"Nome":"Focus","Carro":2013}`)
+	json.Unmarshal(j, &car)
+	fmt.Println(j)
+	fmt.Println(car.Name)
 
 	x := 10
 	y := &x
