@@ -1,0 +1,86 @@
+https://www.youtube.com/watch?v=UEvXPo4cM6c&t=26s
+
+1 - baixar  o instalador docker desktop
+https://www.docker.com/products/docker-desktop/
+
+1.1 - ajuste do erro relacionado ao wsl
+https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+baixar o .msi do wsl2 linus no step 4
+WSL2 Linux kernel update package for x64 machines
+wsl_update_x64.msi
+
+ajuda pelo full cicle
+https://github.com/codeedu/wsl2-docker-quickstart
+
+2 - abrir o windows PowerShell como admin
+Para certificar que o serviço esteja rodando...
+
+docker version
+
+2.1 - alguns comandos
+docker images
+docker ps
+docker run
+docker exec
+docker stop
+docker rm
+
+--name, vai ser o nome do container
+
+
+##Conceitos uteis
+images
+são os arquivos baixados nos repositórios, hospedados no docker pelas empresas, estilo git exemplo: docker pull postgres, docker pull jacobalberty/firebird, esses comando são feitos via terminal shell
+
+containers
+são criados a partir das images originais, são basicamente clonados das images e feitos os acessos aos bancos.
+
+##Lista de bancos 
+https://hub.docker.com/_/postgres/
+$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+docker pull postgres:14-alpine
+docker images
+docker run --name postgres -e POSTGRES_PASSWORD=postgres -d postgres:14-alpine
+docker ps
+docker exec -it postgres psql -U postgres
+\q, para sair, exec para entrar no PSQL
+
+docker stop postgres, parar o container
+docker rm postgres, excluir o container
+docker ps, confirma se excluiu
+docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres:14-alpine
+
+
+https://hub.docker.com/_/mysql
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+docker run -it --network some-network --rm mysql mysql -hsome-mysql -uexample-user -p
+
+docker pull mysql
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=mysql -d mysql
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mysql -d mysql
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Banco12345* -d mysql
+
+
+docker exec -it NOME_DO_CONTAINER mysql -uroot -p
+docker exec -it mysql mysql -uroot -p
+
+https://hub.docker.com/_/microsoft-mssql-server
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=yourStrong(!)Password" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+
+docker pull mcr.microsoft.com/mssql/server
+docker pull mcr.microsoft.com/mssql/server:2022-latest 
+docker run --name sqlserver -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Banco12345*" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+
+
+https://hub.docker.com/r/jacobalberty/firebird
+docker pull jacobalberty/firebird
+docker run --name firebird -p 3050:3050 -e FIREBIRD_DB_PASSWORD=Banco12345* -d jacobalberty/firebird
+
+
+
+08:30 sust
+liegai as 09j
+weklis as 10h manha, terça feira a wek, bruna dev
+trello, treinamentos de regras, parte de ajuda
+md de grupo privte
