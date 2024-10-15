@@ -1,2 +1,1 @@
-# VSCode_Exemplos
-iniciando...
+Exemplos em várias linguagens com visual studio code
