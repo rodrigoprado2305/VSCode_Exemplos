@@ -3,6 +3,13 @@ https://www.youtube.com/watch?v=UEvXPo4cM6c&t=26s
 1 - baixar  o instalador docker desktop
 https://www.docker.com/products/docker-desktop/
 
+turn windows features on or off
+ativar ou desativar recursos do windows
+appwiz.cpl no executar atalho
+windows subsystem for linux
+e a virtual machine is enable in the bios
+
+
 1.1 - ajuste do erro relacionado ao wsl
 https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
 baixar o .msi do wsl2 linus no step 4
@@ -57,9 +64,15 @@ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 docker run -it --network some-network --rm mysql mysql -hsome-mysql -uexample-user -p
 
 docker pull mysql
-docker run --name mysql -e MYSQL_ROOT_PASSWORD=mysql -d mysql
+docker run --name m\ysql -e MYSQL_ROOT_PASSWORD=mysql -d mysql
 docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mysql -d mysql
 docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Banco12345* -d mysql
+
+docker search mysql
+docker pull mysql:5.7
+docker images
+docker run --name mysql5.7 -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Banco12345* mysql:5.7
+
 
 
 docker exec -it NOME_DO_CONTAINER mysql -uroot -p
