@@ -1,0 +1,21 @@
+Curso de React JS para Iniciantes com Projeto
+
+https://www.youtube.com/watch?v=ERflhpiMc1o
+
+com node instalado
+vscode instalado
+
+no terminal digitar
+
+criar uma pasta e nela criar o projeto
+
+npx create-vite
+
+cd vite-project
+navege na pasta 
+
+npm install   OR   npm i
+npm run dev
+
+
+

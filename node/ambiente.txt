@@ -1,0 +1,34 @@
+Como sair do ZERO em Node.js em apenas UMA aula
+
+https://www.youtube.com/watch?v=hHM-hr9q4mo&t=2286s
+
+COMO INSTALAR NODE JS NO WINDOWS?
+https://www.youtube.com/watch?v=-jft_9PlffQ
+
+npm -v
+node version
+
+node ola_mundo.js
+Pressione Ctrl + C no terminal onde o servidor está rodando. 
+Isso envia um sinal de interrupção (SIGINT) para o processo e vai parar o servidor.
+
+
+
+instalar o nvm para controle de versão do node, 
+https://github.com/coreybutler/nvm-windows/releases
+
+Baixar o nvm para Windows:
+
+Acesse o repositório oficial do nvm para Windows no GitHub.
+Baixe o arquivo nvm-setup.zip da versão mais recente.
+Instalar o nvm:
+
+Extraia o conteúdo do arquivo nvm-setup.zip.
+Execute o arquivo nvm-setup.exe e siga as instruções do instalador para completar a instalação.
+Instalar e usar a versão 20 do Node.js:
+
+Abra um novo terminal (ou PowerShell) e execute os seguintes comandos:
+
+nvm install 20
+nvm use 20
+node -v

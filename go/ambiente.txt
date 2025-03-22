@@ -12,3 +12,7 @@ https://golang.org/dl/
 
 4 ctrl + alt + n pra dar o run ou pelo "play"
 
+
+
+5 Perguntas de entrevistadores para devs GO
+https://www.youtube.com/watch?v=L22ULEUdXis
